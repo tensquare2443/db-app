@@ -1,0 +1,135 @@
+@media (max-width: 768px) {
+  .client-panel {
+    display: none; } }
+
+.edit-graph-cont {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  padding-top: 20px;
+  border-radius: 3px; }
+  .edit-graph-cont .edit-graph {
+    background-color: #fff;
+    border-radius: 5;
+    /*height: 67vw;*/
+    height: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    z-index: 10; }
+    @media (max-width: 768px) {
+      .edit-graph-cont .edit-graph {
+        width: 95%; } }
+    @media (min-width: 769px) {
+      .edit-graph-cont .edit-graph {
+        width: 80%; } }
+
+.top-nav-menu {
+  display: none; }
+  @media (max-width: 768px) {
+    .top-nav-menu {
+      display: block; } }
+
+.client {
+  background: #F1F1F1;
+  transition: all 0.2s; }
+  .client:hover {
+    cursor: default;
+    background: #E1E1E1;
+    color: #4E4BC0;
+    transition: all 0.2s; }
+
+.client.active {
+  background: #4E4BC0;
+  color: #fff; }
+  .client.active:hover {
+    background-color: #4340A7;
+    color: #E1E1E1; }
+
+.top-nav-drop {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 115px; }
+
+#tooltip {
+  pointer-events: none;
+  position: absolute;
+  font-family: Arial;
+  font-size: 11px;
+  background-color: #151952;
+  border-radius: 1px;
+  color: #fff; }
+  #tooltip div {
+    padding: 1px 5px 1px 5px;
+    margin: 0px; }
+
+#app .client-panel {
+  background: #F1F1F1; }
+  #app .client-panel .client {
+    background: #F1F1F1;
+    transition: all 0.2s; }
+    #app .client-panel .client:hover {
+      cursor: default;
+      background: #E1E1E1;
+      color: #4E4BC0;
+      transition: all 0.2s; }
+  #app .client-panel .client.active {
+    background: #4E4BC0;
+    color: #fff; }
+    #app .client-panel .client.active:hover {
+      background-color: #4340A7;
+      color: #E1E1E1; }
+
+#app .top-nav {
+  background: #E1E1E1;
+  position: relative; }
+  #app .top-nav .navbar-brand {
+    font-size: 140%; }
+
+#app .dashboard {
+  background: #fff; }
+  #app .dashboard .dash-nav {
+    background: #F1F1F1; }
+    #app .dashboard .dash-nav .nav-link {
+      transition: all 0.2s; }
+      #app .dashboard .dash-nav .nav-link:hover {
+        color: #4C4C4C;
+        transition: all 0.2s; }
+  #app .dashboard .all-graphs .product-charts-title {
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-size: 18px; }
+
+svg {
+  /*@media (min-width:768px) {
+    width: 768px;
+  }*/
+  background: #fff;
+  /*display: block;
+  margin: auto;*/ }
+  svg .x-axis text {
+    font-family: Arial;
+    font-size: 10px;
+    shape-rendering: crispEdges; }
+  svg .x-axis-label, svg .left-y-axis-label, svg .right-y-axis-label, svg .graph-title-label, svg .pie-label {
+    text-anchor: middle;
+    shape-rendering: crispEdges;
+    font-family: Arial; }
+  svg .bar-one {
+    shape-rendering: crispEdges;
+    fill: #C04B86; }
+  svg .bar-two {
+    shape-rendering: crispEdges;
+    fill: #4E4BC0; }
+  svg .bar-one, svg .bar-two, svg .bar-three, svg .bar-four, svg .bar-five, svg .line, svg .arc-path {
+    transition: 0.1s all; }
+    svg .bar-one:hover, svg .bar-two:hover, svg .bar-three:hover, svg .bar-four:hover, svg .bar-five:hover, svg .line:hover, svg .arc-path:hover {
+      opacity: 0.8;
+      transition: 0.1s all; }
+  svg .arc path {
+    stroke: #fff;
+    stroke-width: 3px; }

@@ -1,0 +1,373 @@
+@media (max-width: 768px) {
+  .client-panel {
+    display: none; } }
+
+.edit-graph-cont {
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  padding-top: 20px;
+  transition: 1s all; }
+  .edit-graph-cont .edit-graph {
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 30px;
+    z-index: 10;
+    transition: 1s all; }
+    @media (max-width: 768px) {
+      .edit-graph-cont .edit-graph {
+        width: 75%; } }
+    @media (min-width: 769px) {
+      .edit-graph-cont .edit-graph {
+        width: 60%; } }
+
+.delete-graph-cont {
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  padding-top: 20px; }
+  .delete-graph-cont .delete-graph {
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 30px;
+    z-index: 10; }
+    @media (max-width: 575px) {
+      .delete-graph-cont .delete-graph {
+        border-radius: 0px; } }
+
+.change-date-cont {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  padding-top: 20px; }
+  .change-date-cont .change-date {
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 30px;
+    z-index: 10; }
+    @media (max-width: 575px) {
+      .change-date-cont .change-date {
+        border-radius: 0px; } }
+
+.top-nav-drop {
+  display: none; }
+  @media (max-width: 768px) {
+    .top-nav-drop {
+      display: block; } }
+
+.client {
+  background: #F1F1F1;
+  transition: all 0.2s; }
+  .client:hover {
+    cursor: default;
+    background: #E1E1E1;
+    color: #4E4BC0;
+    transition: all 0.2s; }
+
+#tooltip {
+  pointer-events: none;
+  position: absolute;
+  font-family: Arial;
+  font-size: 11px;
+  background-color: #000;
+  opacity: 0.8;
+  border-radius: 1px;
+  color: #fff; }
+  #tooltip div {
+    padding: 1px 5px 1px 5px;
+    margin: 0px; }
+
+#root .keep-graph {
+  cursor: pointer; }
+
+#root .remove-graph {
+  cursor: pointer; }
+
+#root .client-panel {
+  background: #F1F1F1; }
+  #root .client-panel .client {
+    background: #F1F1F1;
+    transition: all 0.2s; }
+    #root .client-panel .client:hover {
+      cursor: pointer;
+      background: #E1E1E1;
+      color: #4E4BC0;
+      transition: all 0.2s; }
+  #root .client-panel .client.active {
+    background: #4E4BC0;
+    color: #fff; }
+    #root .client-panel .client.active:hover {
+      background-color: #4340A7;
+      color: #E1E1E1; }
+
+#root .client-top {
+  transition: all 0.2s; }
+  #root .client-top:hover {
+    cursor: pointer;
+    background: #E1E1E1;
+    color: #4E4BC0;
+    transition: all 0.2s; }
+
+#root .client-top.active {
+  background: #4E4BC0;
+  color: #fff; }
+  #root .client-top.active:hover {
+    background-color: #4340A7;
+    color: #E1E1E1; }
+
+#root .top-nav {
+  background-color: #e5e5e5; }
+  #root .top-nav .navbar-brand {
+    font-size: 140%;
+    cursor: default; }
+  #root .top-nav .nav-link, #root .top-nav .navbar-toggler {
+    color: black;
+    cursor: pointer; }
+
+#root .dashboard {
+  background: #fff; }
+  #root .dashboard .dash-nav {
+    background: #F1F1F1; }
+    #root .dashboard .dash-nav .nav-link, #root .dashboard .dash-nav .navbar-toggler {
+      color: black;
+      cursor: pointer;
+      transition: all 0.2s; }
+      #root .dashboard .dash-nav .nav-link:hover, #root .dashboard .dash-nav .navbar-toggler:hover {
+        color: #4C4C4C;
+        transition: all 0.2s; }
+    #root .dashboard .dash-nav .navbar-brand {
+      cursor: default; }
+    #root .dashboard .dash-nav .nav-link {
+      transition: all 0.2s; }
+      #root .dashboard .dash-nav .nav-link:hover {
+        transition: all 0.2s;
+        background-color: #E1E1E1;
+        color: #4E4BC0; }
+    #root .dashboard .dash-nav .date-drop-item {
+      cursor: pointer;
+      transition: all 0.2s; }
+      #root .dashboard .dash-nav .date-drop-item:hover {
+        transition: all 0.2s;
+        background-color: #E1E1E1;
+        color: #4E4BC0; }
+    #root .dashboard .dash-nav .prod-drop-item {
+      cursor: pointer;
+      transition: all 0.2s; }
+      #root .dashboard .dash-nav .prod-drop-item:hover {
+        transition: all 0.2s;
+        background-color: #f1f1f1;
+        color: #4E4BC0; }
+
+#root .edit-nav {
+  background: #F1F1F1; }
+
+#root .edit-graph .nav-item {
+  font-size: 14px; }
+
+#root .edit-nav .edit-graph-save-btn, #root .edit-nav .edit-graph-cancel-btn, #root .edit-nav-opts .edit-graph-save-btn, #root .edit-nav-opts .edit-graph-cancel-btn {
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer; }
+
+#root .edit-nav .edit-nav-graph-div, #root .edit-nav-opts .edit-nav-graph-div {
+  cursor: pointer; }
+  #root .edit-nav .edit-nav-graph-div:hover, #root .edit-nav-opts .edit-nav-graph-div:hover {
+    transition: all 0.2s;
+    background-color: #E1E1E1;
+    color: #4E4BC0; }
+
+#root .edit-nav .edit-nav-add-div, #root .edit-nav-opts .edit-nav-add-div {
+  cursor: default;
+  padding-right: 4px;
+  padding-left: 2px; }
+
+#root .edit-nav .color-wheel:hover, #root .edit-nav-opts .color-wheel:hover {
+  cursor: pointer;
+  opacity: 0.7; }
+
+#root .edit-nav-tree-top .edit-nav-tree-top-product {
+  cursor: default; }
+
+#root .edit-nav-tree-top .opt-cat {
+  cursor: pointer;
+  font-weight: bold;
+  color: #000; }
+
+#root .edit-nav-tree-top .opt-cat-beg {
+  cursor: pointer;
+  color: #000; }
+
+#root .edit-nav-tree-top .edit-nav-choose-opt {
+  color: black; }
+
+#root .edit-nav-tree-top .dropdown-item {
+  cursor: pointer; }
+  #root .edit-nav-tree-top .dropdown-item:hover {
+    transition: all 0.2s;
+    background-color: #f5f5f5;
+    color: #4E4BC0; }
+
+#root .edit-nav-tree-top .edit-graph-save-btn, #root .edit-nav-tree-top .edit-graph-cancel-btn {
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer; }
+
+#root .edit-nav-tree-two .edit-nav-graph-div {
+  color: black;
+  cursor: pointer; }
+  #root .edit-nav-tree-two .edit-nav-graph-div:hover {
+    transition: all 0.2s;
+    background-color: #f1f1f1;
+    color: #4E4BC0; }
+
+#root .edit-nav-tree-two .edit-nav-graph-div.active {
+  background-color: #f1f1f1;
+  color: #4E4BC0;
+  cursor: pointer; }
+  #root .edit-nav-tree-two .edit-nav-graph-div.active:hover {
+    transition: all 0.2s;
+    background-color: #e5e5e5;
+    color: #4E4BC0; }
+
+.graphs.all-graphs {
+  margin-bottom: 30px; }
+
+svg {
+  background: #fff; }
+  svg text {
+    cursor: default; }
+  svg .x-axis text {
+    font-family: Arial;
+    font-size: 10px;
+    shape-rendering: crispEdges; }
+  svg .x-axis-label, svg .left-y-axis-label, svg .right-y-axis-label, svg .graph-title-label, svg .pie-label {
+    text-anchor: middle;
+    shape-rendering: crispEdges;
+    font-family: Arial; }
+  svg .bar-one {
+    shape-rendering: crispEdges; }
+  svg .bar-two {
+    shape-rendering: crispEdges; }
+  svg .bar-one, svg .bar-two, svg .bar-three, svg .bar-four, svg .bar-five, svg .line, svg .arc-path {
+    transition: 0.1s all; }
+    svg .bar-one:hover, svg .bar-two:hover, svg .bar-three:hover, svg .bar-four:hover, svg .bar-five:hover, svg .line:hover, svg .arc-path:hover {
+      opacity: 0.8;
+      transition: 0.1s all; }
+  svg .arc path {
+    stroke: #fff;
+    stroke-width: 3px; }
+
+.client.active {
+  background: #4E4BC0;
+  color: #fff; }
+  .client.active:hover {
+    background-color: #4340A7;
+    color: #E1E1E1; }
+
+.svg-cont {
+  padding-bottom: 66.67%; }
+
+.product-charts-title {
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-size: 18px;
+  padding-left: 5%;
+  cursor: default; }
+
+@media screen and (min-width: 1200px) {
+  .graphs svg {
+    margin-right: 60px;
+    margin-left: 60px; }
+  .graphs.svg-cont {
+    padding-bottom: 59%; }
+  .product-charts-title {
+    font-size: 22px;
+    padding-left: 10%; } }
+
+@media screen and (max-width: 576px) {
+  .product-charts-title {
+    font-size: 12px; }
+  svg .x-axis text, svg .left-y-axis text, svg .right-y-axis text {
+    font-size: 16px; }
+  svg .x-axis-label, svg .left-y-axis-label, svg .right-y-axis-label {
+    font-size: 24px; } }
+
+@media screen and (max-width: 288px) {
+  svg .x-axis text {
+    font-size: 20px; }
+  svg .left-y-axis text, svg .right-y-axis text {
+    font-size: 24px; }
+  svg .x-axis-label, svg .left-y-axis-label, svg .right-y-axis-label {
+    font-size: 30px; } }
+
+@media screen and (min-width: 1275px) {
+  .svg-cont {
+    padding-bottom: 60%; } }
+
+@media screen and (min-width: 1450px) {
+  .svg-cont {
+    padding-bottom: 61%; } }
+
+@media screen and (min-width: 1675px) {
+  .svg-cont {
+    padding-bottom: 62%; } }
+
+@media screen and (min-width: 1825px) {
+  .svg-cont {
+    padding-bottom: 63%; } }
+
+@media screen and (min-width: 2175px) {
+  .svg-cont {
+    padding-bottom: 64%; } }
+
+@media screen and (min-width: 2425px) {
+  .svg-cont {
+    padding-bottom: 65%; } }
+
+/*.edit-g-cont, .edit-g-rect, .edit-g, .delete-g-cont, .delete-g-rect, .delete-g {
+  transition: all 0.2s;
+  &:hover {
+    transition: all 0.2s;
+    .edit-g {
+      fill: #187FA5;
+    }
+    .delete-g {
+      fill: #BA1616;
+    }
+  }
+}*/
+svg:hover {
+  transition: all 0.2s; }
+  svg:hover .edit-g-cont, svg:hover .delete-g-cont {
+    fill: #b5b5b5; }
+
+.edit-g-cont {
+  cursor: pointer; }
+  .edit-g-cont:hover .edit-g {
+    fill: #2A2875; }
+
+.delete-g-cont {
+  cursor: pointer; }
+  .delete-g-cont:hover .delete-g {
+    fill: #A51919; }
+
+/*.top-nav {
+  background-color: black;
+}*/
