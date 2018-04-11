@@ -1195,7 +1195,7 @@ class DeleteGraph extends React.Component {
       return(
         <div className="delete-graph-cont">
           <div className="delete-graph col-11 col-md-7 col-lg-3">
-            <div className="text-center">Are you sure you want to delete this graph?</div>
+            <div className="text-center">Are you sure you want to {"delete this"} graph?</div>
             <div className="row justify-content-center">
               <div className="col text-center" style={{ marginTop: "4px", marginBottom: "4px" }}>
                 <button type="button" className="btn btn-success keep-graph" onClick={this.props.deleteGraph.bind(this)}>Keep</button>

@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "cors": "^2.8.4",
     "d3": "^4.11.0",
+    "express": "^4.16.3",
     "jquery": "^3.2.1",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.2",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "serve": "^6.5.4"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
